@@ -1,16 +1,51 @@
+ul {
+	margin: 0%;
+	padding: 0%;
+}
+.site-header {	
+		height: 55px;
+		width: 100%;
+		background-color: pink;
+		position: sticky;
+		top: 0;
+		z-index: 99999;
+		border-bottom: red 0.5px solid;
+		font-weight: 600;
+		letter-spacing: 2px;
+
+
+		.site-branding {
+
+				float: left;
+				margin: 0px 15px;
+				height:auto;
+				width:150px;
+
+			a {
+				img {
+					padding: 3%;
+					height:50px;
+					width:40px;
+					margin: 0%;
+				}
+			}
+		}
+}
+
 .main-navigation {
 	display: block;
 	width: 100%;
+	height: auto;
 
 	ul {
+		list-style-type: none;
 		display: none;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
 
 		ul {
+			list-style-type: none;
+			display: none;
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
+			float: right;
 			position: absolute;
 			top: 100%;
 			left: -999em;
@@ -32,6 +67,7 @@
 
 			a {
 				width: 200px;
+				
 			}
 
 			:hover > a,
@@ -60,7 +96,23 @@
 	a {
 		display: block;
 		text-decoration: none;
+		display: inline-block;
+		color: #000;
+		font-weight: bolder;
+		text-transform: uppercase;
+		margin: 20px 20px;
+		font-weight: 600;
+
+		&:hover {
+			color: red;
+		}
+
+		&:active {
+			color: black;
+		}
 	}
+
+	
 
 	.current_page_item > a,
 	.current-menu-item > a,
@@ -70,20 +122,70 @@
 }
 
 /* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
+.menu-toggle {
+    display: block;
+    padding: 16px 16px 18px 16px;
+    position: absolute;
+    right: 2px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+.main-navigation.toggled {
+
+    display: block;
+    right: 0px;
+	width: 100%;
+	background-color: #8a0808;
+
+	.menu-primary-menu-container {
+		width: 50%;
+	}
+    
+    ul {
+        width: 50%;
+        display: block;
+        position: absolute;
+        height: auto;
+        right: 0;
+        margin: 48px 0 0 1px;
+        background-image: linear-gradient(to left, rgb(242, 150, 2), transparent) ;
+        text-align: center;
+		transform: translateX(10%);
+		transition: transform 5s ease-in;
+		text-shadow: 1px 1px red;
+	
+    
+        li a {
+            padding: 3%;
+			background-image: linear-gradient(to bottom,transparent, rgba(250, 245, 245, 0.5), transparent);
+			width: 100%;
+            
+        }
+    }
 }
 
-@media screen and (min-width: 37.5em) {
+.burger-menu {
+    display: flex;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #40282C;
+	padding: 4%;
+	margin: 0%;
+}
+
+@media screen and (min-width: 948px) {
+
 
 	.menu-toggle {
 		display: none;
 	}
 
 	.main-navigation ul {
+
 		display: flex;
 	}
+
 }
 
 .comment-navigation,
