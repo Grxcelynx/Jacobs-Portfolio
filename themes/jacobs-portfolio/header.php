@@ -27,6 +27,8 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
+			<h3>Jacob Difede</h3>
+			<h6>UX/ UI Designer</h6>
 			<?php
 			the_custom_logo();
 			?>

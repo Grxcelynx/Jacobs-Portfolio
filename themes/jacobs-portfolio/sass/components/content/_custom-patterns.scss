@@ -1,0 +1,61 @@
+/////////////////////////
+//ABOUT SECTION
+////////////////////////
+.about-section {
+    .wp-block-column{
+        margin-top: 100px;
+        padding: 5px;
+
+        h2{
+            margin: 0px auto;
+        }
+
+        p{
+            width: 540px;
+            height: 288px;
+        }
+    }
+}
+
+/////////////////////////
+//PROJECT SECTION
+////////////////////////
+.project-display{
+    margin: 0 auto !important;
+
+    .project-1{
+        // padding-left: 50px;
+    }
+    .wp-block-columns{
+        justify-content: center;
+        p{
+            width: 461px;
+        }
+
+        img{
+            width: 590px;
+            height: 328px;
+        }
+
+    
+    }
+}
+
+.info-boxes{
+    width: 848px;
+    margin: 0 auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    .info-box{
+        // margin: 0px 200px;
+        .wp-block-columns{
+            // width: 50%;
+            height: 250px;
+            margin: 0 50px;
+
+            h6 {
+                margin: 10px auto;
+            }
+        }
+    
+    }
+}
