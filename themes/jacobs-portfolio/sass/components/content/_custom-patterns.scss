@@ -2,6 +2,7 @@
 //ABOUT SECTION
 ////////////////////////
 .about-section {
+    margin: 0 auto;
     .wp-block-column{
         margin-top: 100px;
         padding: 5px;
@@ -27,7 +28,6 @@
         // padding-left: 50px;
     }
     .wp-block-columns{
-        justify-content: center;
         p{
             width: 461px;
         }
@@ -35,6 +35,10 @@
         img{
             width: 590px;
             height: 328px;
+        }
+
+        a:visited {
+            color: lightblue;
         }
 
     

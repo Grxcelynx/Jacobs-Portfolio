@@ -619,6 +619,10 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+.entry-content {
+  margin: 0 !important;
+}
+
 .entry-title {
   display: none;
 }
@@ -629,9 +633,8 @@ ul {
 }
 
 .site-header {
-  height: 55px;
+  height: auto;
   width: 100%;
-  background-color: white;
   position: sticky;
   top: 0;
   z-index: 99999;
@@ -792,25 +795,54 @@ ul {
 
 /* Footer
 --------------------------------------------- */
+.entry-footer {
+  display: none;
+}
+
+.site-footer {
+  height: 350px;
+  width: 100%;
+  background-color: #212121;
+  bottom: 0;
+  text-align: center;
+  color: white;
+}
+.site-footer .footer-title {
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 64px;
+  line-height: 72px;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.site-footer .email {
+  color: white;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+.site-footer .social-media {
+  margin: 60px auto 10px auto;
+}
+.site-footer .social-media ul {
+  list-style: none;
+}
+.site-footer .social-media ul a {
+  display: inline-block;
+  margin: 0 20px;
+}
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
   display: block;
 }
 
-.post,
-.page {
-  margin: 0 0 1.5em;
-}
-
 .updated:not(.published) {
   display: none;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5em 0 0;
 }
 
 .page-links {
@@ -931,6 +963,9 @@ ul {
 
 /* Custom Patterns
 --------------------------------------------- */
+.about-section {
+  margin: 0 auto;
+}
 .about-section .wp-block-column {
   margin-top: 100px;
   padding: 5px;
@@ -946,15 +981,15 @@ ul {
 .project-display {
   margin: 0 auto !important;
 }
-.project-display .wp-block-columns {
-  justify-content: center;
-}
 .project-display .wp-block-columns p {
   width: 461px;
 }
 .project-display .wp-block-columns img {
   width: 590px;
   height: 328px;
+}
+.project-display .wp-block-columns a:visited {
+  color: lightblue;
 }
 
 .info-boxes {
