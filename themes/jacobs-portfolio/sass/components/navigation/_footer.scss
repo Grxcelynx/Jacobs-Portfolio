@@ -3,12 +3,14 @@
 }
 
 .site-footer{
-    height: 350px;
+    height: 380px;
     width: 100%;
     background-color: #212121;
     bottom: 0;
     text-align: center;
     color: white;
+    font-size: 10px;
+    text-decoration: none;
     .footer-title{
         margin: 0 auto;
         padding-top: 50px;
@@ -19,6 +21,15 @@
         font-weight: 200;
     }
 
+    .site-info{
+        margin-top: 25px;
+        padding: 5px 0px;
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
     .email{
         color: white;
         font-size: 24px;
@@ -46,7 +57,4 @@
         }
     }
 
-    .site-info{
-
-    }
 }

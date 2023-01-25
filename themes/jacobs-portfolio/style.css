@@ -651,6 +651,10 @@ ul {
 .site-header .site-branding h6 {
   margin: 3% auto 0% auto;
 }
+.site-header .site-branding a {
+  text-decoration: none;
+  color: black;
+}
 .site-header .site-branding a img {
   padding: 3%;
   height: 50px;
@@ -800,12 +804,14 @@ ul {
 }
 
 .site-footer {
-  height: 350px;
+  height: 380px;
   width: 100%;
   background-color: #212121;
   bottom: 0;
   text-align: center;
   color: white;
+  font-size: 10px;
+  text-decoration: none;
 }
 .site-footer .footer-title {
   margin: 0 auto;
@@ -815,6 +821,14 @@ ul {
   line-height: 72px;
   text-transform: uppercase;
   font-weight: 200;
+}
+.site-footer .site-info {
+  margin-top: 25px;
+  padding: 5px 0px;
+}
+.site-footer .site-info a {
+  color: white;
+  text-decoration: none;
 }
 .site-footer .email {
   color: white;
@@ -957,8 +971,15 @@ ul {
 /* Homepage
 --------------------------------------------- */
 .site-main {
-  padding: 0 90px;
   background-color: #F8F7F9;
+}
+
+.project-display {
+  padding: 0 90px;
+}
+
+.about-section {
+  padding: 0 90px;
 }
 
 /* Custom Patterns
@@ -1007,6 +1028,10 @@ ul {
 
 /* Case Study Page
 --------------------------------------------- */
+.case-study-section {
+  padding: 0 90px;
+}
+
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
