@@ -16,6 +16,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@100;200;400&display=swap" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>
@@ -28,7 +31,7 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<a href="/homepage">
-				<h3>Jacob Difede</h3>
+				<h3>Macob Difede</h3>
 				<h6>UX/ UI Designer</h6>
 			</a>
 			<?php

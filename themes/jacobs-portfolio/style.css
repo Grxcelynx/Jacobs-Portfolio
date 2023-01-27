@@ -116,10 +116,6 @@ pre {
 /**
  * Remove the gray background on active links in IE 10.
  */
-a {
-  background-color: transparent;
-}
-
 /**
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -402,10 +398,6 @@ h6 {
   clear: both;
 }
 
-p {
-  margin-bottom: 1.5em;
-}
-
 dfn,
 cite,
 em,
@@ -632,21 +624,41 @@ ul {
   padding: 0%;
 }
 
+.wp-block-columns {
+  margin-bottom: 0%;
+}
+
+.project-section {
+  display: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Aboreto", cursive;
+}
+
+a p {
+  font-family: "Montserrat", sans-serif;
+}
+
 .site-header {
   height: auto;
   width: 100%;
+  background-color: #F8F7F9;
   position: sticky;
   top: 0;
   z-index: 99999;
-  font-weight: 600;
   letter-spacing: 2px;
   text-align: center;
 }
 .site-header .site-branding {
+  font-family: "Aboreto", cursive;
   float: left;
   margin: 0px 15px;
   height: auto;
-  width: 150px;
+  width: 220px;
+}
+.site-header .site-branding h3 {
+  font-size: 24px;
 }
 .site-header .site-branding h6 {
   margin: 3% auto 0% auto;
@@ -666,6 +678,8 @@ ul {
   display: block;
   width: 100%;
   height: auto;
+  font-family: "Aboreto", cursive;
+  font-size: 24px;
 }
 .main-navigation ul {
   list-style-type: none;
@@ -975,11 +989,24 @@ ul {
 }
 
 .project-display {
-  padding: 0 90px;
+  padding: 0px 90px 0px 90px;
 }
 
 .about-section {
-  padding: 0 90px;
+  padding: 0px 130px 0px 130px;
+}
+.about-section .wp-block-column .wp-block-buttons .wp-block-button a {
+  border: 1px solid #091540;
+}
+.about-section .wp-block-column .wp-block-buttons .wp-block-button a:hover {
+  background-color: white !important;
+  color: #091540 !important;
+}
+.about-section .wp-block-column .wp-block-buttons .wp-block-button a:active {
+  color: lightblue;
+}
+.about-section .wp-block-column .wp-block-buttons .wp-block-button a:visited {
+  display: none;
 }
 
 /* Custom Patterns
@@ -999,18 +1026,36 @@ ul {
   height: 288px;
 }
 
+.project-section {
+  margin-bottom: 0%;
+  display: none;
+}
+
 .project-display {
   margin: 0 auto !important;
 }
-.project-display .wp-block-columns p {
-  width: 461px;
+.project-display .wp-block-columns .project-text-r {
+  padding-right: 50px;
+}
+.project-display .wp-block-columns .project-text-l {
+  padding-left: 55px;
 }
 .project-display .wp-block-columns img {
   width: 590px;
   height: 328px;
 }
-.project-display .wp-block-columns a:visited {
+.project-display .wp-block-columns a {
+  border: 1px solid #091540;
+}
+.project-display .wp-block-columns a:hover {
+  background-color: white !important;
+  color: #091540 !important;
+}
+.project-display .wp-block-columns a:active {
   color: lightblue;
+}
+.project-display .wp-block-columns a:visited {
+  display: none;
 }
 
 .info-boxes {

@@ -21,6 +21,12 @@
 /////////////////////////
 //PROJECT SECTION
 ////////////////////////
+/// 
+.project-section {
+    margin-bottom: 0%;
+    display: none;
+}
+
 .project-display{
     margin: 0 auto !important;
 
@@ -28,8 +34,16 @@
         // padding-left: 50px;
     }
     .wp-block-columns{
+        .project-text-r {
+            padding-right: 50px;
+        }
+
+        .project-text-l {
+            padding-left: 55px;
+        }
+
         p{
-            width: 461px;
+            // width: 461px;
         }
 
         img{
@@ -37,8 +51,21 @@
             height: 328px;
         }
 
-        a:visited {
+        a{
+            border: 1px solid #091540;
+
+        }
+        a:hover{
+            background-color: white !important;
+            color: #091540 !important;
+        }
+    
+        a:active {
             color: lightblue;
+        }
+    
+        a:visited{
+            display: none;
         }
 
     
