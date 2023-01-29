@@ -31,7 +31,7 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 			<a href="/homepage">
-				<h3>Macob Difede</h3>
+				<h3>Jacob Difede</h3>
 				<h6>UX/ UI Designer</h6>
 			</a>
 			<?php

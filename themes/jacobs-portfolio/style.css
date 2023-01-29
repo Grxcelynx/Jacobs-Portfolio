@@ -637,7 +637,13 @@ h1, h2, h3, h4, h5 {
 }
 
 a p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.greynav {
+  background-color: #F8F7F9;
 }
 
 .site-header {
@@ -656,12 +662,16 @@ a p {
   margin: 0px 15px;
   height: auto;
   width: 220px;
+  color: #091540;
 }
 .site-header .site-branding h3 {
   font-size: 24px;
+  color: #091540;
+  margin: 20px auto 10px auto;
 }
 .site-header .site-branding h6 {
-  margin: 3% auto 0% auto;
+  margin: 1% auto 0% auto;
+  color: #091540;
 }
 .site-header .site-branding a {
   text-decoration: none;
@@ -690,13 +700,13 @@ a p {
 .main-navigation ul ul {
   list-style-type: none;
   display: none;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: right;
   position: absolute;
   top: 100%;
   left: -999em;
   z-index: 99999;
   margin-right: 5px;
+  color: #091540;
 }
 .main-navigation ul ul ul {
   left: -999em;
@@ -724,7 +734,7 @@ a p {
   display: block;
   text-decoration: none;
   display: inline-block;
-  color: #000;
+  color: #091540;
   font-weight: bolder;
   text-transform: uppercase;
   margin: 20px 20px;
@@ -748,7 +758,6 @@ a p {
   display: block;
   right: 0px;
   width: 100%;
-  background-color: #8a0808;
 }
 .main-navigation.toggled .menu-primary-menu-container {
   width: 50%;
@@ -760,15 +769,12 @@ a p {
   height: auto;
   right: 0;
   margin: 48px 0 0 1px;
-  background-image: linear-gradient(to left, rgb(242, 150, 2), transparent);
   text-align: center;
   transform: translateX(10%);
   transition: transform 5s ease-in;
-  text-shadow: 1px 1px red;
 }
 .main-navigation.toggled ul li a {
   padding: 3%;
-  background-image: linear-gradient(to bottom, transparent, rgba(250, 245, 245, 0.5), transparent);
   width: 100%;
 }
 
@@ -852,6 +858,7 @@ a p {
   font-weight: 100;
   text-decoration: none;
   letter-spacing: 2px;
+  font-family: "Aboreto";
 }
 .site-footer .social-media {
   margin: 60px auto 10px auto;
@@ -863,6 +870,19 @@ a p {
   display: inline-block;
   margin: 0 20px;
 }
+.site-footer .social-media ul a li .linkedin:hover {
+  background-color: lightgrey;
+  border-radius: 5px;
+}
+.site-footer .social-media ul a li .gh:hover {
+  background-color: #091540;
+  border-radius: 50px;
+}
+.site-footer .social-media ul a li .ig:hover {
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
 /* Posts and pages
 --------------------------------------------- */
 .sticky {
@@ -1019,11 +1039,25 @@ a p {
   padding: 5px;
 }
 .about-section .wp-block-column h2 {
-  margin: 0px auto;
+  margin: 0px auto 20px auto;
+  font-family: "esthetique";
+  font-style: normal;
+  font-weight: 400;
 }
 .about-section .wp-block-column p {
-  width: 540px;
-  height: 288px;
+  padding-right: 20px;
+  margin: 5px auto;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+}
+.about-section .wp-block-column .wp-element-button {
+  margin-top: 80px;
+}
+.about-section .wp-block-column .wp-element-button a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
 }
 
 .project-section {
@@ -1040,12 +1074,20 @@ a p {
 .project-display .wp-block-columns .project-text-l {
   padding-left: 55px;
 }
+.project-display .wp-block-columns p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+}
 .project-display .wp-block-columns img {
   width: 590px;
   height: 328px;
 }
 .project-display .wp-block-columns a {
   border: 1px solid #091540;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
 }
 .project-display .wp-block-columns a:hover {
   background-color: white !important;
@@ -1069,6 +1111,16 @@ a p {
 }
 .info-boxes .info-box .wp-block-columns h6 {
   margin: 10px auto;
+}
+
+.case-study-section h4 {
+  font-size: 24px;
+}
+.case-study-section p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 /* Case Study Page

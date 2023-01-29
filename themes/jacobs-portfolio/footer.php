@@ -36,23 +36,23 @@
 		<div class="social-media">
             <ul>
 			<?php if($linkedin_url && $linkedin_icon):?>
-                    <a href="<?php echo esc_url($linkedin_url)?>"><li><img src="<?php echo esc_url($linkedin_icon)?>" alt="instagram footer icon"></li></a>
+                    <a href="<?php echo esc_url($linkedin_url)?>"><li><img class="linkedin" src="<?php echo esc_url($linkedin_icon)?>" alt="instagram footer icon"></li></a>
 				<?php endif; ?>
 
 				<?php if($github_url && $github_icon):?>
-						<a href="<?php echo esc_url($github_url)?>"><li><img src="<?php echo esc_url($github_icon)?>" alt="twitter footer icon"></li></a>
+						<a href="<?php echo esc_url($github_url)?>"><li><img class="gh" src="<?php echo esc_url($github_icon)?>" alt="twitter footer icon"></li></a>
 					<?php endif; ?>
 
                 <?php if($instagram_url && $instagram_icon):?>
-                    <a href="<?php echo esc_url($instagram_url)?>"><li><img src="<?php echo esc_url($instagram_icon)?>" alt="instagram footer icon"></li></a>
+                    <a href="<?php echo esc_url($instagram_url)?>"><li><img  class="ig" src="<?php echo esc_url($instagram_icon)?>" alt="instagram footer icon"></li></a>
                 <?php endif; ?>
 
 					<?php if($other_url && $other_icon):?>
-						<a href="<?php echo esc_url($other_url)?>"><li><img src="<?php echo esc_url($other_icon)?>" alt="other footer icon"></li></a>
+						<a href="<?php echo esc_url($other_url)?>"><li><img class="other"  src="<?php echo esc_url($other_icon)?>" alt="other footer icon"></li></a>
 				<?php endif; ?>
 				
 				<?php if($other2_url && $other2_icon):?>
-						<a href="<?php echo esc_url($other2_url)?>"><li><img src="<?php echo esc_url($other2_icon)?>" alt="other2 footer icon"></li></a>
+						<a href="<?php echo esc_url($other2_url)?>"><li><img class="other2"  src="<?php echo esc_url($other2_icon)?>" alt="other2 footer icon"></li></a>
 				<?php endif; ?>
             </ul>
         </div>

@@ -22,12 +22,18 @@ h1, h2, h3, h4, h5 {
 }
 
 a p {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+}
+.greynav{
+	background-color: #F8F7F9;
 }
 .site-header {	
 		height: auto;
 		width: 100%;
 		background-color: #F8F7F9;
+		// background-color: pink !important;
 		position: sticky;
 		top: 0;
 		z-index: 99999;
@@ -42,13 +48,17 @@ a p {
 				margin: 0px 15px;
 				height:auto;
 				width:220px;
+				color: #091540;
 
 				h3{
 					font-size: 24px;
+					color: #091540;
+					margin: 20px auto 10px auto;
 				}
 
 				h6 {
-					margin: 3% auto 0% auto;
+					margin: 1% auto 0% auto;
+					color: #091540;
 				}
 
 			a {
@@ -82,13 +92,13 @@ a p {
 		ul {
 			list-style-type: none;
 			display: none;
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: right;
 			position: absolute;
 			top: 100%;
 			left: -999em;
 			z-index: 99999;
 			margin-right: 5px;
+			color: #091540;
 
 
 			ul {
@@ -141,7 +151,7 @@ a p {
 		display: block;
 		text-decoration: none;
 		display: inline-block;
-		color: #000;
+		color: #091540;
 		font-weight: bolder;
 		text-transform: uppercase;
 		margin: 20px 20px;
@@ -180,7 +190,6 @@ a p {
     display: block;
     right: 0px;
 	width: 100%;
-	background-color: #8a0808;
 
 	.menu-primary-menu-container {
 		width: 50%;
@@ -193,16 +202,13 @@ a p {
         height: auto;
         right: 0;
         margin: 48px 0 0 1px;
-        background-image: linear-gradient(to left, rgb(242, 150, 2), transparent) ;
         text-align: center;
 		transform: translateX(10%);
 		transition: transform 5s ease-in;
-		text-shadow: 1px 1px red;
 	
     
         li a {
             padding: 3%;
-			background-image: linear-gradient(to bottom,transparent, rgba(250, 245, 245, 0.5), transparent);
 			width: 100%;
             
         }
