@@ -142,7 +142,7 @@ function jacobs_portfolio_scripts() {
 	wp_style_add_data( 'jacobs-portfolio-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'jacobs-portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
-	wp_enqueue_script( 'jacobs-portfolio-navbar-scroll', get_template_directory_uri() . '/js/navbar-scroll.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'jacobs-portfolio-navbar-scroll', get_template_directory_uri() . '/js/navbar-scroll.js', array("jquery") );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

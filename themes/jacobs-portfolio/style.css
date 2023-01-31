@@ -615,6 +615,10 @@ textarea {
   margin: 0 !important;
 }
 
+.site {
+  background-color: #F8F7F9;
+}
+
 .entry-title {
   display: none;
 }
@@ -647,9 +651,8 @@ a p {
 }
 
 .site-header {
-  height: auto;
+  height: 90px;
   width: 100%;
-  background-color: #F8F7F9;
   position: sticky;
   top: 0;
   z-index: 99999;
@@ -824,7 +827,7 @@ a p {
 }
 
 .site-footer {
-  height: 380px;
+  height: auto;
   width: 100%;
   background-color: #212121;
   bottom: 0;
@@ -875,7 +878,7 @@ a p {
   border-radius: 5px;
 }
 .site-footer .social-media ul a li .gh:hover {
-  background-color: #091540;
+  background-color: lightgray;
   border-radius: 50px;
 }
 .site-footer .social-media ul a li .ig:hover {

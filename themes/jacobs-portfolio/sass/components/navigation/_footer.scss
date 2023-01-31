@@ -3,7 +3,7 @@
 }
 
 .site-footer{
-    height: 380px;
+    height: auto;
     width: 100%;
     background-color: #212121;
     bottom: 0;
@@ -59,7 +59,7 @@
                         border-radius: 5px;
                     }
                     .gh:hover{
-                        background-color: #091540;
+                        background-color: lightgray;
                         border-radius: 50px;
                     }                    
                     .ig:hover{

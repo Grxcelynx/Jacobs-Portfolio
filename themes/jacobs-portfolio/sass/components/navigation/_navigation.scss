@@ -1,6 +1,10 @@
 .entry-content {
 	margin: 0 !important;
 }
+
+.site {
+	background-color: #F8F7F9;
+}
 .entry-title {
 	display: none;
 }
@@ -29,11 +33,13 @@ a p {
 .greynav{
 	background-color: #F8F7F9;
 }
+
+
 .site-header {	
-		height: auto;
+		height: 90px;
 		width: 100%;
-		background-color: #F8F7F9;
-		// background-color: pink !important;
+		// background-color: #F8F7F9;
+		// background-color: pink ;
 		position: sticky;
 		top: 0;
 		z-index: 99999;
