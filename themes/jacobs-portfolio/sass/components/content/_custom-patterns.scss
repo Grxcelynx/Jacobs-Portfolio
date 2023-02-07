@@ -2,6 +2,7 @@
 //ABOUT SECTION
 ////////////////////////
 .about-section {
+    padding: 0px 130px 0px 130px;
     margin: 0 auto;
     .wp-block-column{
         margin-top: 100px;
@@ -20,6 +21,24 @@
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 400;
+        }
+
+        .wp-block-column {
+
+            .wp-block-buttons {
+    
+                .wp-block-button {
+    
+                    a{
+                        border: 1px solid #091540;
+    
+                    }
+                
+                    a:visited{
+                        display: none;
+                    }
+                }
+            }
         }
 
         .wp-element-button {
@@ -43,6 +62,7 @@
 }
 
 .project-display{
+    padding: 0px 90px 0px 90px;
     margin: 0 auto !important;
 
     .project-1{
@@ -50,11 +70,11 @@
     }
     .wp-block-columns{
         .project-text-r {
-            padding-right: 50px;
+            // padding-right: 50px;
         }
 
         .project-text-l {
-            padding-left: 55px;
+            // padding-left: 55px;
         }
 
         p{
@@ -70,19 +90,19 @@
         }
 
         a{
-            border: 1px solid #091540;
+            // border: 1px solid #091540;
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 300;
 
         }
         a:hover{
-            background-color: white !important;
-            color: #091540 !important;
+            // background-color: white !important;
+            // color: #091540 !important;
         }
     
         a:active {
-            color: lightblue;
+            // color: lightblue;
         }
     
         a:visited{
@@ -124,4 +144,52 @@
         font-weight: 400;
         font-size: 16px;
     }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .top-spacer{
+        display: none;
+    }
+
+    .about-section {
+        padding: 0px 30px;
+
+        .profile-pic-col{
+            display: none;
+        }
+
+        .wp-block-column{
+            margin-top: 70px;
+            p{
+                padding-right: 0px;
+                font-size: 15px !important;
+            }
+
+            
+                
+            .wp-element-button{
+                    margin-top: 10px;
+            }
+                
+        }
+    }
+
+    .right {
+        .wp-block-columns {
+            flex-direction: column-reverse;
+        }
+    }
+    .project-display{
+        padding: 0 30px;
+        .wp-block-columns {
+
+            .project-text-l {
+                padding-left: 0px ;
+            }
+        
+        }
+    }
+
 }

@@ -120,3 +120,203 @@ function add_image($wp_customize, $name, $label, $section){
         'section'   => $section
     ) ));
 }
+
+////////////////////
+// CUSTOM COLORS
+///////////////////
+
+//NAVBAR COLOR
+function jacobs_portfolio_customize_color1_register( $wp_customize ) {
+    $wp_customize->add_setting( 'customize_nav_color' , array(
+        'default'     => "#000000",
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'customize_nav_color', array(
+        'label'        => __( 'Nav Bar Color', 'jacobs_portfolio' ),
+        'section'    => 'colors',
+    ) ) );
+}
+
+add_action( 'customize_register', 'jacobs_portfolio_customize_color1_register' );
+
+//NAVBAR TEXT COLOR
+function jacobs_portfolio_customize_color2_register( $wp_customize ) {
+    $wp_customize->add_setting( 'customize_navtxt_color' , array(
+        'default'     => "#000000",
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'customize_navtxt_color', array(
+        'label'        => __( 'Nav Bar TEXT Color', 'jacobs_portfolio' ),
+        'section'    => 'colors',
+    ) ) );
+}
+
+add_action( 'customize_register', 'jacobs_portfolio_customize_color2_register' );
+
+//NAVBAR HOVER BAR COLOR
+function jacobs_portfolio_customize_color3_register( $wp_customize ) {
+    $wp_customize->add_setting( 'customize_navbarhov_color' , array(
+        'default'     => "#000000",
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'customize_navbarhov_color', array(
+        'label'        => __( 'Nav HOVER Bar Color', 'jacobs_portfolio' ),
+        'section'    => 'colors',
+    ) ) );
+}
+
+add_action( 'customize_register', 'jacobs_portfolio_customize_color3_register' );
+
+// BUTTON HOVER COLOR
+function jacobs_portfolio_customize_color4_register( $wp_customize ) {
+    $wp_customize->add_setting( 'customize_btnhov_color' , array(
+        'default'     => "#000000",
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'customize_btnhov_color', array(
+        'label'        => __( 'ALL Button Hover Color', 'jacobs_portfolio' ),
+        'section'    => 'colors',
+    ) ) );
+}
+
+add_action( 'customize_register', 'jacobs_portfolio_customize_color4_register' );
+
+// BUTTON HOVER TEXT COLOR
+function jacobs_portfolio_customize_color5_register( $wp_customize ) {
+    $wp_customize->add_setting( 'customize_btnhovtext_color' , array(
+        'default'     => "#000000",
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'customize_btnhovtext_color', array(
+        'label'        => __( 'ALL Button Hover TEXT Color', 'jacobs_portfolio' ),
+        'section'    => 'colors',
+    ) ) );
+}
+
+add_action( 'customize_register', 'jacobs_portfolio_customize_color5_register' );
+
+// BUTTON HOVER BORDER COLOR
+function jacobs_portfolio_customize_color6_register( $wp_customize ) {
+    $wp_customize->add_setting( 'customize_btnhovborder_color' , array(
+        'default'     => "#000000",
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'customize_btnhovborder_color', array(
+        'label'        => __( 'ALL Button Hover BORDER Color', 'jacobs_portfolio' ),
+        'section'    => 'colors',
+    ) ) );
+}
+
+add_action( 'customize_register', 'jacobs_portfolio_customize_color6_register' );
+
+// FOOTER BACKGROUND COLOR
+function jacobs_portfolio_customize_color7_register( $wp_customize ) {
+    $wp_customize->add_setting( 'customize_footerbkg_color' , array(
+        'default'     => "#000000",
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'customize_footerbkg_color', array(
+        'label'        => __( 'Footer Background Color', 'jacobs_portfolio' ),
+        'section'    => 'colors',
+    ) ) );
+}
+
+add_action( 'customize_register', 'jacobs_portfolio_customize_color7_register' );
+
+// FOOTER MSG TEXT COLOR
+function jacobs_portfolio_customize_color8_register( $wp_customize ) {
+    $wp_customize->add_setting( 'customize_footerheader_color' , array(
+        'default'     => "#000000",
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'customize_footerheader_color', array(
+        'label'        => __( 'Footer Header Text Color', 'jacobs_portfolio' ),
+        'section'    => 'colors',
+    ) ) );
+}
+
+add_action( 'customize_register', 'jacobs_portfolio_customize_color8_register' );
+
+// FOOTER EMAIL TEXT COLOR
+function jacobs_portfolio_customize_color9_register( $wp_customize ) {
+    $wp_customize->add_setting( 'customize_footeremail_color' , array(
+        'default'     => "#000000",
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'customize_footeremail_color', array(
+        'label'        => __( 'Footer Email Text Color', 'jacobs_portfolio' ),
+        'section'    => 'colors',
+    ) ) );
+}
+
+add_action( 'customize_register', 'jacobs_portfolio_customize_color9_register' );
+
+// FOOTER EMAIL TEXT COLOR
+function jacobs_portfolio_customize_color10_register( $wp_customize ) {
+    $wp_customize->add_setting( 'customize_creds_color' , array(
+        'default'     => "#000000",
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'customize_creds_color', array(
+        'label'        => __( 'Dev Creds Text Color', 'jacobs_portfolio' ),
+        'section'    => 'colors',
+    ) ) );
+}
+
+add_action( 'customize_register', 'jacobs_portfolio_customize_color10_register' );
+
+// FOOTER ICON HOVER COLOR
+function jacobs_portfolio_customize_color11_register( $wp_customize ) {
+    $wp_customize->add_setting( 'customize_iconhov_color' , array(
+        'default'     => "#000000",
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'customize_iconhov_color', array(
+        'label'        => __( 'Icon Hover Color', 'jacobs_portfolio' ),
+        'section'    => 'colors',
+    ) ) );
+}
+
+add_action( 'customize_register', 'jacobs_portfolio_customize_color11_register' );
+
+// FULL SITE BACKGROUND COLOR
+function jacobs_portfolio_customize_color12_register( $wp_customize ) {
+    $wp_customize->add_setting( 'customize_site_color' , array(
+        'default'     => "#000000",
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'customize_site_color', array(
+        'label'        => __( 'Overall Site Background Color', 'jacobs_portfolio' ),
+        'section'    => 'colors',
+    ) ) );
+}
+
+add_action( 'customize_register', 'jacobs_portfolio_customize_color12_register' );
+
+// HOMEPAGE BACKGROUND COLOR
+function jacobs_portfolio_customize_color13_register( $wp_customize ) {
+    $wp_customize->add_setting( 'customize_sitehome_color' , array(
+        'default'     => "#000000",
+        'transport'   => 'refresh',
+    ) );
+
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'customize_sitehome_color', array(
+        'label'        => __( 'Homepage Background Color', 'jacobs_portfolio' ),
+        'section'    => 'colors',
+    ) ) );
+}
+
+add_action( 'customize_register', 'jacobs_portfolio_customize_color13_register' );
+

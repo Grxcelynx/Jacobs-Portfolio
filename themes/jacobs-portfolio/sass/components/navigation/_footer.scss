@@ -5,10 +5,9 @@
 .site-footer{
     height: auto;
     width: 100%;
-    background-color: #212121;
     bottom: 0;
     text-align: center;
-    color: white;
+    // color: white;
     font-size: 10px;
     text-decoration: none;
     .footer-title{
@@ -26,12 +25,10 @@
         padding: 5px 0px;
 
         a{
-            color: white;
             text-decoration: none;
         }
     }
     .email{
-        color: white;
         font-size: 24px;
         line-height: 32px;
         text-transform: uppercase;
@@ -51,19 +48,15 @@
                 margin: 0 20px;
                 li{
                     img{
-                        // filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(255, 255, 255, 0.5));
                     }
 
                     .linkedin:hover{
-                        background-color: lightgrey;
                         border-radius: 5px;
                     }
                     .gh:hover{
-                        background-color: lightgray;
                         border-radius: 50px;
                     }                    
                     .ig:hover{
-                        background-color: lightgrey;
                         border-radius: 10px;
                     }
                 }
@@ -71,4 +64,62 @@
         }
     }
 
+}
+
+@media screen and (max-width: 500px) {
+    .site-footer{
+
+        .footer-title{
+            margin: 0 auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            font-size: 30px;
+            line-height: 32px;
+        }
+    
+        .site-info{
+            margin-top: 25px;
+            padding: 5px 0px;
+    
+            a{
+                text-decoration: none;
+            }
+        }
+        .email{
+            font-size: 14px;
+            line-height: 22px;
+            text-transform: uppercase;
+            font-weight: 100;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-family: 'Aboreto';
+        }
+    
+        .social-media{
+            margin: 60px auto 10px auto;
+            ul{
+                list-style: none;
+                
+                a{
+                    display: inline-block;
+                    margin: 0 20px;
+                    li{
+                        img{
+                        }
+    
+                        .linkedin:hover{
+                            border-radius: 5px;
+                        }
+                        .gh:hover{
+                            border-radius: 50px;
+                        }                    
+                        .ig:hover{
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
 }

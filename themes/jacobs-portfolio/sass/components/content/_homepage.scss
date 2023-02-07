@@ -1,40 +1,12 @@
 .site-main {
-    // padding: 0 90px;
-    background-color: #F8F7F9;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-.project-display{
-    padding: 0px 90px 0px 90px;
+.page-name {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-.about-section {
-    padding: 0px 130px 0px 130px;
 
-    .wp-block-column {
-
-        .wp-block-buttons {
-
-            .wp-block-button {
-
-                a{
-                    border: 1px solid #091540;
-
-                }
-                a:hover{
-                    background-color: white !important;
-                    color: #091540 !important;
-                }
-            
-                a:active {
-                    color: lightblue;
-                }
-            
-                a:visited{
-                    display: none;
-                }
-            }
-        }
-    }
-
-}
 

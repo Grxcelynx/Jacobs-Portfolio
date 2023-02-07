@@ -38,8 +38,7 @@ a p {
 .site-header {	
 		height: 90px;
 		width: 100%;
-		// background-color: #F8F7F9;
-		// background-color: pink ;
+
 		position: sticky;
 		top: 0;
 		z-index: 99999;
@@ -47,7 +46,6 @@ a p {
 		text-align: center;
 
 		.site-branding {
-			// background-color: #F8F7F9;
 			font-family: 'Aboreto', cursive;
 
 				float: left;
@@ -58,18 +56,15 @@ a p {
 
 				h3{
 					font-size: 24px;
-					color: #091540;
 					margin: 20px auto 10px auto;
 				}
 
 				h6 {
 					margin: 1% auto 0% auto;
-					color: #091540;
 				}
 
 			a {
 				text-decoration: none;
-				color: black;
 				img {
 					padding: 3%;
 					height:50px;
@@ -104,7 +99,7 @@ a p {
 			left: -999em;
 			z-index: 99999;
 			margin-right: 5px;
-			color: #091540;
+			// color: #091540;
 
 
 			ul {
@@ -146,7 +141,7 @@ a p {
 	li {
 		position: relative;
 		&:hover {
-			border-bottom: solid 2px black;
+			// border-bottom: solid 2px black;
 		}
 		&:hover > a,
 		&.focus > a {
@@ -157,7 +152,6 @@ a p {
 		display: block;
 		text-decoration: none;
 		display: inline-block;
-		color: #091540;
 		font-weight: bolder;
 		text-transform: uppercase;
 		margin: 20px 20px;
@@ -199,22 +193,27 @@ a p {
 
 	.menu-primary-menu-container {
 		width: 50%;
+		text-align: center;
 	}
     
     ul {
-        width: 50%;
+        width: 20%;
         display: block;
         position: absolute;
         height: auto;
         right: 0;
         margin: 48px 0 0 1px;
-        text-align: center;
-		transform: translateX(10%);
+		transform: translateX(0%);
 		transition: transform 5s ease-in;
+		// background-color: #F8F7F9;
+		text-align: center;
+		font-size: 14px;
+		background: linear-gradient(to left, #F8F7F9,rgb(248, 247, 249, 0.9), transparent);
 	
     
         li a {
-            padding: 3%;
+			text-align: center;
+            padding: 0%;
 			width: 100%;
             
         }
@@ -223,9 +222,9 @@ a p {
 
 .burger-menu {
     display: flex;
-    font-weight: 800;
-    font-size: 1.5rem;
-    color: #40282C;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: black;
 	padding: 4%;
 	margin: 0%;
 }
@@ -249,7 +248,7 @@ a p {
 .post-navigation {
 
 	.site-main & {
-		margin: 0 0 1.5em;
+		// margin: 0 0 1.5em;
 	}
 
 	.nav-links {
