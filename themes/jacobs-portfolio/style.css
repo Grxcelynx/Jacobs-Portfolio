@@ -850,6 +850,7 @@ a p {
 }
 .site-footer .site-info a {
   text-decoration: none;
+  font-family: "Montserrat";
 }
 .site-footer .email {
   font-size: 24px;
@@ -889,20 +890,15 @@ a p {
     line-height: 32px;
   }
   .site-footer .site-info {
-    margin-top: 25px;
-    padding: 5px 0px;
+    font-size: 7px;
   }
   .site-footer .site-info a {
-    text-decoration: none;
+    font-size: 7px;
   }
   .site-footer .email {
     font-size: 14px;
     line-height: 18px;
-    text-transform: uppercase;
-    font-weight: 100;
-    text-decoration: none;
     letter-spacing: 2px;
-    font-family: "Aboreto";
   }
   .site-footer .social-media {
     margin: 60px auto 10px auto;
@@ -1107,10 +1103,6 @@ a p {
   font-style: normal;
   font-weight: 400;
 }
-.project-display .wp-block-columns img {
-  width: 590px;
-  height: 328px;
-}
 .project-display .wp-block-columns a {
   font-family: "Montserrat";
   font-style: normal;
@@ -1133,17 +1125,7 @@ a p {
   margin: 10px auto;
 }
 
-.case-study-section h4 {
-  font-size: 24px;
-}
-.case-study-section p {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-@media screen and (max-width: 948px) {
+@media screen and (max-width: 781px) {
   .top-spacer {
     display: none;
   }
@@ -1182,15 +1164,20 @@ a p {
     display: none;
   }
   .project-display {
-    padding: 0 30px;
+    padding: 10px 25px 40px 25px;
+  }
+  .project-display .alignright {
+    float: none;
+    margin: 0;
   }
   .project-display .wp-block-columns h4 {
-    margin: 0px auto 25px auto;
+    margin: 25px auto;
     font-size: 24px !important;
     line-height: 32px !important;
   }
   .project-display .wp-block-columns p {
     margin: 0px auto 25px auto;
+    font-size: 14px !important;
   }
   .project-display .wp-block-columns .wp-element-button {
     font-size: 14px !important;
@@ -1208,10 +1195,89 @@ a p {
 }
 /* Case Study Page
 --------------------------------------------- */
+.case-spacer {
+  display: none;
+}
+
 .case-study-section {
   padding: 0 90px;
 }
+.case-study-section .line-h5:before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background: black;
+  left: 0;
+  position: relative;
+  margin: 0px 10px 5px auto;
+}
+.case-study-section .tone2:before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background: white;
+  left: 0;
+  position: relative;
+  margin: 0px 10px 5px auto;
+}
+.case-study-section h4 {
+  font-size: 24px;
+}
+.case-study-section p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
 
+@media screen and (max-width: 781px) {
+  .alignright {
+    float: none;
+    margin: 0;
+  }
+  .bottom-spacer {
+    height: 50px !important;
+  }
+  .flip .wp-block-columns {
+    flex-direction: column-reverse;
+  }
+  .flip .wp-block-columns p {
+    font-size: 14px !important;
+  }
+  .info-boxes {
+    margin: 0 25px;
+    display: inline-block !important;
+    width: auto;
+    height: auto;
+    background-color: white;
+  }
+  .info-boxes .info-box .wp-block-columns {
+    height: auto;
+    margin: 0px 25px 40px 25px;
+  }
+  .info-boxes .info-box .wp-block-columns .wp-block-column {
+    padding: 10px auto;
+  }
+  .info-boxes .info-box .wp-block-columns .wp-block-column h6 {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+  .case-study-section {
+    padding: 0 25px;
+  }
+  .case-study-section p {
+    font-size: 14px !important;
+  }
+  .case-study-section .wp-block-columns .wp-block-column .wp-block-image .alignright {
+    float: none;
+    margin: 0;
+  }
+  :where(.wp-block-columns.is-layout-flex) {
+    gap: 1em;
+  }
+}
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/

@@ -1,3 +1,124 @@
+
+
+.case-spacer {
+    display: none;
+}
+
 .case-study-section {
+
+    
+
+    .line-h5:before {
+        content: "";
+        display: inline-block;
+        width: 100px;
+        height: 1px;
+        background: black;
+        left: 0;
+        // top: 50%;
+        position: relative;
+        margin: 0px 10px 5px auto;
+    }
+
+    .tone2:before {
+        content: "";
+        display: inline-block;
+        width: 100px;
+        height: 1px;
+        background: white;
+        left: 0;
+        // top: 50%;
+        position: relative;
+        margin: 0px 10px 5px auto;
+    }
+
     padding: 0 90px;
+    h4 {
+        font-size: 24px;
+    }
+    p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 781px) {
+    .alignright {
+        float: none;
+        margin: 0;
+    }
+    .bottom-spacer {
+        height: 50px !important;
+    }
+    .flip {
+        .wp-block-columns {
+            flex-direction: column-reverse;
+
+            p{
+                font-size: 14px !important;
+            }
+        }
+    }
+
+    .info-boxes{
+        margin: 0 25px;
+        display: inline-block !important;
+        width: auto;
+        // height: 500px;
+        height: auto;
+        background-color: white;
+
+        .info-box {
+            .wp-block-columns{
+                height: auto;
+                margin: 0px 25px 40px 25px;
+                // h6{
+                //     margin: 20px auto;
+                // }
+                .wp-block-column{
+                    padding: 10px auto;
+
+                    h6{
+                        font-size: 14px !important;
+                        line-height: 22px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .case-study-section {
+        padding: 0 25px;
+
+        p{
+            font-size: 14px !important;
+        }
+
+        .wp-block-columns{
+            .wp-block-column{
+                .wp-block-image{
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    .alignright {
+                        float: none;
+                        margin: 0;
+                    }
+                    img {
+                        // display: flex;
+                        // justify-content: center;
+                        // align-content: center !important;
+                        // margin: 0 auto;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    :where(.wp-block-columns.is-layout-flex){
+        gap: 1em;
+    }
 }

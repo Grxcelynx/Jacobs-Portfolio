@@ -62,7 +62,7 @@
 			<!-- <span class="sep"> | </span> -->
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Developed by %2$s.', 'jacobs-portfolio' ), 'jacobs-portfolio', '<a target="_blank" href="http://grxcelyn.com">Grxcelyn. Development</a>' );
+				printf( esc_html__( 'Development &#169;	 %2$s.', 'jacobs-portfolio' ), 'jacobs-portfolio', '<a target="_blank" href="http://grxcelyn.com">Grxcelyn</a>' );
 				?>
 		</div><!-- .site-info -->
 

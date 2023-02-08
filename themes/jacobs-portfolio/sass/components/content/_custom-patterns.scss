@@ -88,10 +88,10 @@
             font-weight: 400;
         }
 
-        img{
-            width: 590px;
-            height: 328px;
-        }
+        // img{
+        //     width: 590px;
+        //     height: 328px;
+        // }
 
         a{
             // border: 1px solid #091540;
@@ -137,21 +137,8 @@
 }
 
 
-.case-study-section {
 
-    h4 {
-        font-size: 24px;
-    }
-    p {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-    }
-}
-
-
-@media screen and (max-width: 948px) {
+@media screen and (max-width: 781px) {
 
     .top-spacer{
         display: none;
@@ -205,18 +192,23 @@
         display: none;
     }
     .project-display{
-        padding: 0 30px;
+        padding: 10px 25px 40px 25px;
+        .alignright {
+            float: none;
+            margin: 0;
+        }
         .wp-block-columns {
 
             
             h4{
-                margin: 0px auto 25px auto;
+                margin: 25px auto;
                 font-size: 24px !important;
                 line-height: 32px !important;
             }
 
             p{
                 margin: 0px auto 25px auto;
+                font-size: 14px !important;
             }
 
             .wp-element-button{
