@@ -1,12 +1,11 @@
 
 
-.case-spacer {
-    display: none;
-}
-
 .case-study-section {
+    padding: 0 150px;
 
-    
+    .line-h5{
+        margin: 50px auto ;
+    }
 
     .line-h5:before {
         content: "";
@@ -32,7 +31,6 @@
         margin: 0px 10px 5px auto;
     }
 
-    padding: 0 90px;
     h4 {
         font-size: 24px;
     }
@@ -45,6 +43,10 @@
 }
 
 @media screen and (max-width: 781px) {
+    .case-spacer {
+        display: none;
+    }
+
     .alignright {
         float: none;
         margin: 0;

@@ -1195,12 +1195,11 @@ a p {
 }
 /* Case Study Page
 --------------------------------------------- */
-.case-spacer {
-  display: none;
-}
-
 .case-study-section {
-  padding: 0 90px;
+  padding: 0 150px;
+}
+.case-study-section .line-h5 {
+  margin: 50px auto;
 }
 .case-study-section .line-h5:before {
   content: "";
@@ -1233,6 +1232,9 @@ a p {
 }
 
 @media screen and (max-width: 781px) {
+  .case-spacer {
+    display: none;
+  }
   .alignright {
     float: none;
     margin: 0;
