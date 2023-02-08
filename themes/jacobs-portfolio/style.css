@@ -741,12 +741,17 @@ a p {
 /* Small menu. */
 .menu-toggle {
   display: block;
-  padding: 16px 16px 18px 16px;
+  padding: 0 20px 0 0;
+  margin: 30px auto 10px auto;
   position: absolute;
   right: 2px;
   background-color: transparent;
   border: none;
   border-radius: 0;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Aboreto", cursive;
+  line-height: 18px;
 }
 
 .main-navigation.toggled {
@@ -777,15 +782,6 @@ a p {
   width: 100%;
 }
 
-.burger-menu {
-  display: flex;
-  font-weight: 600;
-  font-size: 1.8rem;
-  color: black;
-  padding: 4%;
-  margin: 0%;
-}
-
 @media screen and (min-width: 948px) {
   .menu-toggle {
     display: none;
@@ -811,6 +807,20 @@ a p {
   flex: 1 0 50%;
 }
 
+@media screen and (max-width: 948px) {
+  .site-header .site-branding {
+    text-align: left;
+    padding: 0 10px;
+  }
+  .site-header .site-branding h3 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .site-header .site-branding h6 {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+  }
+}
 /* Footer
 --------------------------------------------- */
 .entry-footer {
@@ -870,12 +880,12 @@ a p {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 821px) {
   .site-footer .footer-title {
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 32px;
   }
   .site-footer .site-info {
@@ -887,7 +897,7 @@ a p {
   }
   .site-footer .email {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 18px;
     text-transform: uppercase;
     font-weight: 100;
     text-decoration: none;
@@ -1133,12 +1143,12 @@ a p {
   font-size: 16px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 948px) {
   .top-spacer {
     display: none;
   }
   .about-section {
-    padding: 0px 30px;
+    padding: 0px 25px;
   }
   .about-section .profile-pic-col {
     display: none;
@@ -1146,21 +1156,54 @@ a p {
   .about-section .wp-block-column {
     margin-top: 70px;
   }
-  .about-section .wp-block-column p {
+  .about-section .wp-block-column .about-title {
+    font-size: 36px !important;
+  }
+  .about-section .wp-block-column .about-p {
+    font-size: 14px !important;
     padding-right: 0px;
-    font-size: 15px !important;
   }
   .about-section .wp-block-column .wp-element-button {
     margin-top: 10px;
+    font-size: 14px !important;
+  }
+  #projects {
+    font-size: 32px !important;
+    line-height: 40px;
+    margin: 0 auto;
+  }
+  .project-spacer {
+    display: none;
   }
   .right .wp-block-columns {
     flex-direction: column-reverse;
   }
+  .project-spacers {
+    display: none;
+  }
   .project-display {
     padding: 0 30px;
   }
+  .project-display .wp-block-columns h4 {
+    margin: 0px auto 25px auto;
+    font-size: 24px !important;
+    line-height: 32px !important;
+  }
+  .project-display .wp-block-columns p {
+    margin: 0px auto 25px auto;
+  }
+  .project-display .wp-block-columns .wp-element-button {
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
   .project-display .wp-block-columns .project-text-l {
     padding-left: 0px;
+  }
+  .project-display .wp-block-columns .wp-block-image {
+    height: fit-content;
+  }
+  .project-display :where(.wp-block-columns.is-layout-flex) {
+    gap: 0;
   }
 }
 /* Case Study Page

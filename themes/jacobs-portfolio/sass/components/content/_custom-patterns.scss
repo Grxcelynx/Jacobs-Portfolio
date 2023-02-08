@@ -1,3 +1,7 @@
+.wp-block-spacer{
+    // display: none;
+}
+
 /////////////////////////
 //ABOUT SECTION
 ////////////////////////
@@ -147,14 +151,14 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 948px) {
 
     .top-spacer{
         display: none;
     }
 
     .about-section {
-        padding: 0px 30px;
+        padding: 0px 25px;
 
         .profile-pic-col{
             display: none;
@@ -162,18 +166,33 @@
 
         .wp-block-column{
             margin-top: 70px;
-            p{
-                padding-right: 0px;
-                font-size: 15px !important;
-            }
 
+            .about-title{
+                font-size: 36px !important;
+            }
+    
+            .about-p{
+                font-size: 14px !important;
+                padding-right: 0px;
+            }
             
                 
             .wp-element-button{
                     margin-top: 10px;
+                    font-size: 14px !important;
             }
                 
         }
+    }
+
+    #projects {
+        font-size: 32px !important;
+        line-height: 40px;
+        margin: 0 auto;
+    }
+
+    .project-spacer{
+        display: none;
     }
 
     .right {
@@ -181,14 +200,40 @@
             flex-direction: column-reverse;
         }
     }
+
+    .project-spacers{
+        display: none;
+    }
     .project-display{
         padding: 0 30px;
         .wp-block-columns {
 
+            
+            h4{
+                margin: 0px auto 25px auto;
+                font-size: 24px !important;
+                line-height: 32px !important;
+            }
+
+            p{
+                margin: 0px auto 25px auto;
+            }
+
+            .wp-element-button{
+                font-size: 14px !important;
+                line-height: 22px !important;
+        }
             .project-text-l {
                 padding-left: 0px ;
             }
+
+            .wp-block-image{
+                height: fit-content;
+            }
         
+        }
+        :where(.wp-block-columns.is-layout-flex){
+            gap: 0;
         }
     }
 
