@@ -1125,15 +1125,32 @@ a p {
   margin: 10px auto;
 }
 
+@media screen and (max-width: 915px) {
+  .about-section .profile-pic-col {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .about-section {
+    padding: 0px 30px;
+  }
+  .project-display {
+    padding: 10px 30px 40px 30px;
+  }
+  .project-display h4 {
+    font-size: 25px !important;
+    margin: 0px auto 5px auto;
+  }
+  .project-display .wp-block-image {
+    height: fit-content;
+  }
+}
 @media screen and (max-width: 781px) {
   .top-spacer {
     display: none;
   }
   .about-section {
     padding: 0px 25px;
-  }
-  .about-section .profile-pic-col {
-    display: none;
   }
   .about-section .wp-block-column {
     margin-top: 70px;
@@ -1231,6 +1248,14 @@ a p {
   font-size: 16px;
 }
 
+@media screen and (max-width: 900px) {
+  .case-study-section {
+    padding: 0 50px;
+  }
+  .case-study-section h4 {
+    margin: 0px auto 5px auto;
+  }
+}
 @media screen and (max-width: 781px) {
   .case-spacer {
     display: none;

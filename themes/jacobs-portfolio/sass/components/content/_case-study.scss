@@ -42,6 +42,16 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .case-study-section {
+        padding: 0 50px;
+
+        h4{
+            margin: 0px auto 5px auto;
+        }
+    }
+}
+
 @media screen and (max-width: 781px) {
     .case-spacer {
         display: none;

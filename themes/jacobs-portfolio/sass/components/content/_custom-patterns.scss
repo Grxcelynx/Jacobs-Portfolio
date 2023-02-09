@@ -136,7 +136,33 @@
     }
 }
 
+@media screen and (max-width: 915px) {
 
+    .about-section {
+        .profile-pic-col{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+
+    .about-section {
+        padding: 0px 30px;
+    }
+
+    .project-display{
+        padding: 10px 30px 40px 30px;
+
+        h4{
+            font-size: 25px !important;
+            margin: 0px auto 5px auto;
+        }
+
+        .wp-block-image{
+            height: fit-content;
+        }
+    }
+}
 
 @media screen and (max-width: 781px) {
 
@@ -146,10 +172,6 @@
 
     .about-section {
         padding: 0px 25px;
-
-        .profile-pic-col{
-            display: none;
-        }
 
         .wp-block-column{
             margin-top: 70px;
