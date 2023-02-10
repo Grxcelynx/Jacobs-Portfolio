@@ -41,7 +41,8 @@
 
 		<nav id="site-navigation" class="main-navigation">
 			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="burger-menu"> &#9776;</span></button> -->
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">resume</button>
+			<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">resume</button> -->
+			<a  aria-controls="primary-menu" href="https://codepen.io/Grxcelyn-mx/pen/YzjGdEj" target="__blank" class="menu-toggle" aria-expanded="false">resume</a>
 
 			<?php
 			wp_nav_menu(
@@ -52,4 +53,6 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+		<!-- <button  aria-controls="primary-menu" href="https://codepen.io/Grxcelyn-mx/pen/YzjGdEj" target="__blank" class="menu-toggle" aria-expanded="false">resume</button> -->
+
 	</header><!-- #masthead -->

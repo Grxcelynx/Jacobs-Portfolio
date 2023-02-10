@@ -765,7 +765,7 @@ a p {
 }
 .main-navigation.toggled ul {
   width: 20%;
-  display: block;
+  display: none;
   position: absolute;
   height: auto;
   right: 0;

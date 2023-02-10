@@ -196,14 +196,19 @@ a p {
     right: 0px;
 	width: 100%;
 
+	// .about-link, .work-link, .contact-link {
+	// 	display: none;
+	// }
+
 	.menu-primary-menu-container {
 		width: 50%;
 		text-align: center;
 	}
-    
+ 
     ul {
         width: 20%;
-        display: block;
+        // display: block;
+		display: none;
         position: absolute;
         height: auto;
         right: 0;
